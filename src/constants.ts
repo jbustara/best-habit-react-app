@@ -1,6 +1,6 @@
-import { Habit_Type, HabitData } from "./types";
+import { Habit_Type, HabitDataProps } from "./types";
 
-export const habitsData: HabitData[] = [
+export const habitsData: HabitDataProps[] = [
   {
     id: 1,
     title: "no sugar",

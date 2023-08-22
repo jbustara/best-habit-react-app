@@ -1,7 +1,7 @@
 import Progress from "./Progress";
-import { HabitData } from "../types";
+import { HabitDataProps } from "../types";
 
-const Habit = ({ title, start, goal, type }: HabitData) => {
+const Habit = ({ title, start, goal, type }: HabitDataProps) => {
   return (
     <div className="habit">
       <h2>{title}</h2>

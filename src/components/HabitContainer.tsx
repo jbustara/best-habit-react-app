@@ -1,10 +1,12 @@
-import { HabitData } from "../types";
+import { HabitDataProps, HabitDataContainerProps } from "../types";
 import Habit from "./Habit";
 
-const HabitContainer = ({ habits = [] }: HabitData[]) => {
+const HabitContainer = ({
+  habits = [],
+}: HabitDataContainerProps): JSX.Element => {
   return (
     <div>
-      {habits.map((habit: HabitData) => (
+      {habits.map((habit: HabitDataProps) => (
         <Habit key={habit.id} {...habit} />
       ))}
     </div>
